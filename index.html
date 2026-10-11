@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Mirage Packaging Limited | Jumbo Bags Kenya</title>
+
+    <meta name="description"
+          content="Blue Mirage Packaging Limited supplies new and used FIBC jumbo bags and bulk packaging solutions across Kenya and East Africa.">
+
+    <style>
+        :root {
+            --navy: #092b50;
+            --blue: #0878bd;
+            --light-blue: #eaf5fc;
+            --white: #ffffff;
+            --text: #253447;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--white);
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 1px solid #e2e8ef;
+        }
+
+        .logo {
+            color: var(--navy);
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #092b50, #0878bd);
+            color: var(--white);
+            padding: 85px 7%;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 4vw, 52px);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .button {
+            display: inline-block;
+            background: #f5b82e;
+            color: #092b50;
+            padding: 13px 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 65px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--navy);
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 35px;
+        }
+
+        .features,
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .feature,
+        .product {
+            border: 1px solid #e1e8ef;
+            border-radius: 10px;
+            padding: 24px;
+            background: var(--white);
+        }
+
+        .feature h3,
+        .product h3 {
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 7px;
+            margin-bottom: 15px;
+        }
+
+        .about {
+            background: var(--light-blue);
+        }
+
+        .contact {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .contact .section-title {
+            color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        form {
+            display: grid;
+            gap: 14px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccd5df;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+        }
+
+        footer {
+            background: #061d35;
+            color: white;
+            padding: 22px 7%;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .hero,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features,
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            nav {
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BLUE MIRAGE PACKAGING</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>FIBC / Jumbo Bags Trading Company in Kenya</h1>
+
+            <p>
+                Reliable bulk packaging solutions for East and Central Africa.
+                We supply new and used jumbo bags to meet diverse industrial
+                packaging and transportation needs.
+            </p>
+
+            <a href="#contact" class="button">Request a Quote</a>
+        </div>
+
+        <img
+            src="https://placehold.co/700x500/eaf5fc/092b50?text=FIBC+Jumbo+Bags"
+            alt="FIBC jumbo bags for bulk packaging">
+    </section>
+
+    <section id="why-us">
+        <h2 class="section-title">Why Choose Blue Mirage?</h2>
+
+        <p class="section-intro">
+            We focus on dependable supply, practical packaging solutions
+            and responsive customer service.
+        </p>
+
+        <div class="features">
+            <article class="feature">
+                <h3>Quality Products</h3>
+                <p>Packaging options selected to meet your product and handling needs.</p>
+            </article>
+
+            <article class="feature">
+                <h3>Reliable Supply</h3>
+                <p>Dependable service for businesses requiring bulk packaging.</p>
+            </article>
+
+            <article class="feature">
+                <h3>Competitive Pricing</h3>
+                <p>New and used bag options for different operational budgets.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2 class="section-title">Our Products</h2>
+
+        <p class="section-intro">
+            Explore our range of flexible intermediate bulk containers
+            and related bulk packaging solutions.
+        </p>
+
+        <div class="products">
+            <article class="product">
+                <img
+                    src="https://placehold.co/500x350/f4f7fa/092b50?text=New+Jumbo+Bags"
+                    alt="New jumbo bags">
+
+                <h3>Brand-New Jumbo Bags</h3>
+
+                <p>
+                    New FIBC bags in a range of specifications,
+                    sizes and configurations, subject to availability.
+                </p>
+            </article>
+
+            <article class="product">
+                <img
+                    src="https://placehold.co/500x350/f4f7fa/092b50?text=Used+Jumbo+Bags"
+                    alt="Used jumbo bags">
+
+                <h3>Second-Hand Jumbo Bags</h3>
+
+                <p>
+                    Cost-effective used bags, with condition and
+                    suitability confirmed for the intended application.
+                </p>
+            </article>
+
+            <article class="product">
+                <img
+                    src="https://placehold.co/500x350/f4f7fa/092b50?text=Specialty+FIBC+Bags"
+                    alt="Specialty FIBC bags">
+
+                <h3>Specialty FIBC Bags</h3>
+
+                <p>
+                    Ask us about baffle, U-panel, liner, food-grade
+                    and other bag configurations.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Blue Mirage Packaging Limited</h2>
+
+        <p class="section-intro">
+            Blue Mirage Packaging Limited is a Kenya-based bulk packaging
+            solutions provider serving customers across East Africa.
+            We trade in new and used FIBC jumbo bags, helping businesses
+            find packaging options suited to their operational needs.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Request a Quotation</h2>
+
+        <div class="contact-grid">
+            <div>
+                <h3>Talk to Our Team</h3>
+
+                <p>
+                    Contact us to enquire about bag specifications,
+                    availability, quantities and pricing.
+                </p>
+
+                <br>
+
+                <p><strong>Phone:</strong> +254 750 790 490</p>
+
+                <p>
+                    <strong>Email:</strong>
+                    info@bluemiragepackaging.co.ke
+                </p>
+
+                <p>
+                    <strong>Website:</strong>
+                    www.bluemiragepackaging.co.ke
+                </p>
+            </div>
+
+            <form id="quoteForm">
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Your name"
+                    required>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="Your email address"
+                    required>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Your phone number">
+
+                <select id="productType" required>
+                    <option value="">Select a product</option>
+                    <option>Brand-new jumbo bags</option>
+                    <option>Second-hand jumbo bags</option>
+                    <option>Specialty FIBC bags</option>
+                </select>
+
+                <textarea
+                    id="message"
+                    placeholder="Tell us your required quantity and specifications"
+                    required></textarea>
+
+                <button type="submit" class="button">
+                    Send Enquiry by Email
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span>
+        Blue Mirage Packaging Limited. All rights reserved.
+    </p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+
+    document.getElementById("quoteForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("customerName").value;
+        const email = document.getElementById("customerEmail").value;
+        const phone = document.getElementById("customerPhone").value;
+        const product = document.getElementById("productType").value;
+        const message = document.getElementById("message").value;
+
+        const subject = encodeURIComponent("Jumbo Bag Quotation Enquiry");
+
+        const body = encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Phone: " + phone + "\n" +
+            "Product: " + product + "\n\n" +
+            "Requirements:\n" + message
+        );
+
+        window.location.href =
+            "mailto:info@bluemiragepackaging.co.ke" +
+            "?subject=" + subject +
+            "&body=" + body;
+    });
+</script>
+
+</body>
+</html>
